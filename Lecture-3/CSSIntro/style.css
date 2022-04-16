@@ -1,0 +1,9 @@
+h3{
+    color: palevioletred;
+    font-size: 36px;
+}
+
+li{
+    text-decoration: line-through;
+    color: gray;
+}

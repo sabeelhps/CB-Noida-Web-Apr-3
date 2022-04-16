@@ -1,0 +1,55 @@
+/* Element Selector */
+
+
+h1{
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: palevioletred;
+}
+
+
+
+/* Id Selector */
+
+#para{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+
+/* Class Selector */
+
+
+.fav-movie{
+    font-weight: bold;
+    color: lightcoral;
+}
+
+
+
+/* Attribute Selector */
+
+input[type="text"]{
+    background-color: lightblue;
+}
+
+a[href="http://facebook.com"]{
+    color: green;
+    font-size: 24px;
+}
+
+
+
+/* Universal Selector */
+
+*{
+    border: 2px solid gray;
+}
