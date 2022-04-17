@@ -1,0 +1,76 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    background-color: aqua;
+}
+
+div:hover{
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+/* 
+:root{
+    font-size: 36px;
+} */
+
+ol li:first-child{
+    color: palevioletred;
+    text-decoration: line-through;
+}
+
+ol li:last-child{
+    color: aquamarine;
+    text-decoration: line-through;
+}
+
+/* li:nth-of-type(3){
+    color: brown;
+}
+
+li:nth-of-type(10){
+    color: brown;
+} */
+
+/* li:nth-of-type(even){
+    color:red;
+} */
+
+/* li:nth-of-type(odd){
+    color:lightcoral;
+} */
+
+/* li:nth-of-type(An+B){
+    color:red;
+} */
+
+/* li:nth-of-type(3n+7){
+    color:lightseagreen;
+} */
+
+p::first-letter{
+    font-size: 36px;
+    color: lightcoral;
+}
+
+h1::after{
+    content: "This is a after h1";
+    border: 2px dashed orange;
+}
+
+h1::before{
+    content: "\2665";
+    color: red;
+}

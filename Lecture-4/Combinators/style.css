@@ -1,0 +1,33 @@
+/* Descendent Combinator */
+
+ul a{
+    font-size: 36px;
+    color: red;
+}
+
+section strong{
+    color: purple;
+}
+
+
+/* Child Combinator */
+
+ul > li{
+    border-top: 5px solid lightcoral;
+}
+
+/* Adjacent Combinator */
+
+h2+p{
+    color: lightgreen;
+}
+
+/* Genral sibling  */
+
+article{
+    border: 2px solid black;
+}
+
+article h4~p{
+    color: lightcoral;
+}
