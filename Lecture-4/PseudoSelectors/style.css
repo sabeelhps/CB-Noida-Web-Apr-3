@@ -74,3 +74,12 @@ h1::before{
     content: "\2665";
     color: red;
 }
+
+/* 
+section p:nth-child(1){
+    color: red;
+} */
+
+section p:nth-of-type(1){
+    color: green;
+}

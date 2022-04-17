@@ -1,0 +1,38 @@
+/* section{
+    font-size: 30px;
+    color: red;
+}
+ */
+
+
+section{
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    background-color: aqua;
+}
+
+
+.box{
+    background-color: lightseagreen;
+}
+
+.square{
+    background-color: palevioletred;
+}
+
+
+/* #special{
+    background-color: lightgreen;
+} */
+
+
+ /* article{
+     border-top: 4px solid palevioletred;
+     color: green;
+ }
+
+ article div{
+     border-top: inherit;
+     color: initial;
+ } */

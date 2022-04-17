@@ -1,0 +1,45 @@
+
+/* Percentage */
+
+section{
+    height: 200px;
+    width: 600px;
+    border: 3px solid black;
+}
+
+section div{
+    height: 40%; /*80 px*/
+    width: 60%;
+    background-color: lightgreen;
+    border: 4px dashed purple;
+}
+
+figure{
+    height: 200px;
+    width: 400px;
+    border: 1px solid #ccc;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+/* em unit */
+
+article:nth-of-type(1){
+    font-size: 20px;
+}
+
+
+ul{
+    /* font-size: 2em; */
+    font-size: 2rem;
+}
+
+article:nth-of-type(2){
+    height: 60vh;
+    width: 40vw;
+    border: 2px solid black;
+    background-color: lightcoral;
+}
