@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    border: 1px solid #ccc;
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+}
+
+.product-name{
+    font-size: 1.6rem;
+    margin:15px 0px;
+    position: relative;
+}
+
+.product-desc{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.product-price{
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.product-btn{
+    padding: 5px 16px;
+    font-size: 1.1rem;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heart-icon{
+    color: red;
+    position: absolute;
+    right: 10px;
+}
+
+.rounded-pill{
+    background-color: #f0efeb;
+    padding: 2px 16px;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left:5%;
+}
