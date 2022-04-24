@@ -1,0 +1,38 @@
+section{
+    width: 75vw;
+    border: 1px solid black;
+    padding: 16px;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* @media screen and (max-width:790px){
+    h1{
+        color: red;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:632px){
+    h1{
+        font-size: 3rem;
+        color: green;
+    }
+} */
+
+/* @media screen and (orientation:portrait){
+    section{
+        background-color: aqua;
+    }
+} */
+
+@media screen and (orientation:portrait),(max-width:1500px){
+    section{
+        background-color: aqua;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,69 @@
+#container{
+    width: 75vw;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    /* border: 2px solid black; */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+    border-top: 10px solid lightblue;
+    border-right: 10px solid lightgreen;
+    border-bottom: 10px solid lightcoral;
+    border-left: 10px solid lightgoldenrodyellow;
+    border-radius: 15px 50px 30px;
+    font-family: sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background-color: aqua;
+    color: white;
+    padding: 30px 0px;
+    /* text-shadow: 10px 10px 2px red,15px 15px 4px green; */
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: palevioletred;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+section:nth-of-type(2){
+    width: 700px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 20px auto;
+
+    background-color: lightgreen;
+    background-image: url('https://images.unsplash.com/photo-1650274842929-e189318649bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8QkpKTXR0ZURKQTR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: bottom;
+    
+
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
