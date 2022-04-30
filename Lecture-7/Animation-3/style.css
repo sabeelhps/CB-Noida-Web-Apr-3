@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border-top: 10px solid #adb5bd;
+    border-right: 10px solid #6c757d;
+    border-bottom: 10px solid #495057;
+    border-left: 10px solid #212529;
+    border-radius: 50%;
+    animation:500ms infinite normal loader;
+    animation-timing-function: linear;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
