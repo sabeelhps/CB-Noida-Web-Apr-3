@@ -1,0 +1,11 @@
+:root{
+   --heading-ka-border :3px solid black;
+   --heading-background:aqua;
+   --heading-font-size:3rem;
+}
+
+h1{
+    border: var(--heading-ka-border);
+    background-color: var(--heading-background);
+    font-size: var(--heading-font-size);
+}
