@@ -1,0 +1,110 @@
+ARRAY METHODS
+
+
+---------------------------push----------
+
+const colors = ['Blue','Green','Orange','Purple'];
+undefined
+colors
+(4) ['Blue', 'Green', 'Orange', 'Purple']
+colors.push('Brown','Black','White')
+7
+colors
+(7) ['Blue', 'Green', 'Orange', 'Purple', 'Brown', 'Black', 'White']
+
+---------------------------pop----------------
+
+const fruits = ['Apple','Orange','Mango'];
+undefined
+fruits
+(3) ['Apple', 'Orange', 'Mango']
+fruits.pop();
+'Mango'
+fruits
+(2) ['Apple', 'Orange']
+const lastItem = fruits.pop();
+undefined
+lastItem
+'Orange'
+fruits
+['Apple']
+
+
+--------------------------unshift--------------
+
+const colors = ['Blue','Green','Orange','Purple'];
+undefined
+colors
+(4) ['Blue', 'Green', 'Orange', 'Purple']
+colors.unshift('White','lightgreen','magenta','aqua')
+8
+colors
+(8) ['White', 'lightgreen', 'magenta', 'aqua', 'Blue', 'Green', 'Orange', 'Purple']
+
+
+-------------------------------shift-------------
+
+colors
+(8) ['White', 'lightgreen', 'magenta', 'aqua', 'Blue', 'Green', 'Orange', 'Purple']
+colors.shift()
+'White'
+colors
+(7) ['lightgreen', 'magenta', 'aqua', 'Blue', 'Green', 'Orange', 'Purple']
+const firstElement = colors.shift();
+undefined
+firstElement
+'lightgreen'
+colors
+(6) ['magenta', 'aqua', 'Blue', 'Green', 'Orange', 'Purple']
+
+----------------------------shift--------
+
+const fruits = ['Apple','Orange','Mango','PineApple','Kiwi','Guava'];
+undefined
+fruits
+(6) ['Apple', 'Orange', 'Mango', 'PineApple', 'Kiwi', 'Guava']
+fruits.slice()
+(6) ['Apple', 'Orange', 'Mango', 'PineApple', 'Kiwi', 'Guava']
+fruits.slice(2);
+(4) ['Mango', 'PineApple', 'Kiwi', 'Guava']
+fruits.slice(1,4)
+(3) ['Orange', 'Mango', 'PineApple']
+fruits
+(6) ['Apple', 'Orange', 'Mango', 'PineApple', 'Kiwi', 'Guava']
+
+
+----------------------------splice-----------------
+
+const fruits = ['Apple','Orange','Mango','PineApple','Kiwi','Guava'];
+undefined
+fruits
+(6) ['Apple', 'Orange', 'Mango', 'PineApple', 'Kiwi', 'Guava']
+fruits.splice(1,3,1,2,3,4,5);
+(3) ['Orange', 'Mango', 'PineApple']
+fruits
+(8) ['Apple', 1, 2, 3, 4, 5, 'Kiwi', 'Guava']
+fruits.splice(2,1);
+[2]
+fruits
+(7) ['Apple', 1, 3, 4, 5, 'Kiwi', 'Guava']
+
+------------------------------indexOf and lastIndexOf------
+
+const fruits = ['Apple','Orange','Mango','PineApple','Kiwi','Guava'];
+undefined
+fruits.indexOf('Mango');
+2
+fruits.indexOf('Grapes');
+-1
+fruits.lastIndexOf('Kiwi')
+4
+
+
+-----------------------------reverse--------------
+
+const arr1 = [10,20,30,40,50];
+undefined
+arr1.reverse()
+(5) [50, 40, 30, 20, 10]
+arr1
+(5) [50, 40, 30, 20, 10]
