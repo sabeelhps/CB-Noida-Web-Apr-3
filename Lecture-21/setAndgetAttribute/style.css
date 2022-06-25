@@ -1,0 +1,16 @@
+.subheading{
+    border: 2px solid black;
+    text-transform: uppercase;
+    background-color: aqua;
+    color: orange;
+}
+
+.one{
+    color: brown;
+    background-color: lightcoral;
+    padding: 16px;
+}
+
+.hide{
+    display: none;
+}
