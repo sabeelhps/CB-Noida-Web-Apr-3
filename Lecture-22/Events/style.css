@@ -1,0 +1,14 @@
+.heading{
+    border: 3px solid black;
+    background-color: palevioletred;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn{
+    100%{
+        background-color: aqua;
+        transform: scale(2);
+    }
+}
