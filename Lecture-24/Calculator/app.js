@@ -3,7 +3,7 @@ const screen = document.getElementById('screen');
 
 keypad.addEventListener('click', (event) => {
     if (event.target.nodeName === 'BUTTON') {
-        // console.log(event.target);
+       
         const buttonText = event.target.innerText;
 
         if (buttonText === 'C') {
@@ -19,7 +19,6 @@ keypad.addEventListener('click', (event) => {
             catch (e) {
                 screen.value = "Invalid Operation";
             }
-            
         }
         else {
             screen.value += buttonText;
