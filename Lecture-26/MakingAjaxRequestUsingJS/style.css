@@ -1,0 +1,9 @@
+figure{
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+figure img{
+    width: 100%;
+}

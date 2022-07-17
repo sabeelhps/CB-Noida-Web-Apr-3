@@ -13,3 +13,4 @@ $('#list').on('click','li',function () {
     console.log('clicked');
     $(this).toggleClass('completed');
 });
+
