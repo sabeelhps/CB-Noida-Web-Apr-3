@@ -1,0 +1,17 @@
+<%- include("./partials/header")%>
+<%- include("./partials/navbar")%>
+<nav>
+    <ul>
+        <%if(!isLoggedIn){ %>
+            <li><a href="#">Login</a></li>
+        <%}else{%>
+            <li><a href="#">Username</a></li>
+            <li><a href="#">Logout</a></li>
+        <%}%>
+    </ul>
+</nav>
+<h1>Welcome to the Home Page</h1>
+<h2>Sum : <%= 1+2+3+4  %>  </h2>
+
+<%- include("./partials/footer")%>
+
