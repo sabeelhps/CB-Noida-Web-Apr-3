@@ -1,0 +1,49 @@
+[
+    {
+        "id":"325677348",
+        "title":"First Tweet",
+        "text":"adhfsgjdfs",
+        "comments":[
+            {
+                "comment_id":"231672i348",
+                "commentText":"some comment",
+                "user_id":1
+            },
+            {
+                "comment_id":"231672i348",
+                "commentText":"some comment",
+                "user_id":2
+            },
+            {
+                "comment_id":"231672i348",
+                "commentText":"some comment",
+                "user_id":3
+
+            }
+        ],
+        "likes":[1,2,3,4,5]
+    },
+    {
+        "id":"asd2367834",
+        "title":"First Tweet",
+        "text":"adhfsgjdfs",
+        "comments":[],
+        "likes":[1,2,3,4,5]
+    },
+    {
+        "id":"2365763hjdbsjd",
+        "title":"First Tweet",
+        "text":"adhfsgjdfs",
+        "comments":[],
+        "likes":[1,2,3,4,5]
+    },
+    {
+        "id":"273683mdsndshjj",
+        "title":"First Tweet",
+        "text":"adhfsgjdfs",
+        "comments":[],
+        "likes":[1,2,3,4,5]
+    }
+]
+
+
