@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/product');
+const Review = require('../models/review');
 
 
 
@@ -25,7 +26,8 @@ router.post('/products', async (req, res) => {
 // Show a single product
 router.get('/products/:id', async (req, res) => {
     const { id } = req.params;
-    const product = await Product.findById(id);
+    const product = await Product.findById(id).populate('reviews');
+    console.log(product);
     res.render('products/show', { product });
 });
 
@@ -51,6 +53,27 @@ router.delete('/products/:id', async (req, res) => {
     await Product.findByIdAndDelete(id);
     res.redirect('/products');
 });
+
+
+// Create a new review on a product
+router.post('/products/:id/review', async(req, res) => {
+    const { id } = req.params;
+    const { rating, comment } = req.body;
+
+    const review = new Review({ rating, comment });
+
+    const product = await Product.findById(id);
+
+    // adding a id to the product on which review is added
+    product.reviews.push(review);
+
+    await review.save(); //actually saving a review inside our database(reviews collection)
+    await product.save() //Saving back the product inside our db(products collection)
+
+    res.redirect(`/products/${id}`);
+});
+
+// Delete review is homework
 
 
 module.exports = router;

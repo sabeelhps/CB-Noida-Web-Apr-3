@@ -18,7 +18,32 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-6">
-        <h1>Add a Review</h1>
+    <div class="col-lg-5">
+        <h1 class="display-6">Leave a Review</h1>
+        <div class="mb-3">
+            <form action="/products/<%=product._id%>/review" method="post">
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input type="range" class="form-control" name="rating" id="rating" min="0" max="5" step="1">
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Comment</label>
+                    <textarea class="form-control" name="comment" id="commment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">Submit</button>
+            </form>
+        </div>
+        <div class="mb-3">
+            <% for(const review of product.reviews.reverse()){ %>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <p>Rated: <%=review.rating%></p>
+                        <p><%=review.comment%></p>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </div>
+                  
+                  </div>
+            <% } %> 
+        </div>
     </div>
 </div>
