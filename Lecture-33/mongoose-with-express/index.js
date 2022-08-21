@@ -17,15 +17,30 @@ mongoose.connect('mongodb://localhost:27017/pizza-db')
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+app.get('/orders', async (req, res) => {
+    const orders = await Order.find({});
+    res.status(200).json(orders);
+});
+
+
+app.get('/search', async (req, res) => {
+    const { q } = req.query;
+    const orders = await Order.find({
+        name: {
+            $regex: `^${q}`,
+            $options: 'i'
+        }
+    });
+
+    res.json(orders);
 })
-
-
-
-
 
 
 app.listen(3000,()=>{
