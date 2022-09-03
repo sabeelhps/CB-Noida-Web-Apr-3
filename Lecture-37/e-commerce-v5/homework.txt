@@ -1,0 +1,5 @@
+1.Create a delete review functionality.
+2.Add search product functionality based upon names
+3.Add pagination to the reviews(https://www.npmjs.com/package/mongoose-paginate-v2)
+4.Add Pagination to index page to display product
+5.Add like and average rating functionality for products(see the video if need any help)
