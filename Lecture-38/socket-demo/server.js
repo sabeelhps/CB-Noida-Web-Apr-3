@@ -29,6 +29,16 @@ io.on('connection', (socket) => {
         })
     });
 
+    socket.on('typing', () => {
+        socket.broadcast.emit('some-one-typing', {
+            username: users[socket.id]
+        })
+    })
+
+    socket.on('typing-stopped', () => {
+        socket.broadcast.emit('typing-stopped-event');
+    })
+
 
     socket.on('disconnect', () => {
         console.log(`client with ${socket.id} disconnected`);
