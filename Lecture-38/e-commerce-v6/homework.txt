@@ -1,0 +1,11 @@
+1.Create a delete review functionality.
+2.Add search product functionality based upon names
+3.Add pagination to the reviews(https://www.npmjs.com/package/mongoose-paginate-v2)
+4.Add Pagination to index page to display product
+5.Add like and average rating functionality for products(see the video if need any help)
+https://www.f5.com/labs/articles/education/securing-apis--10-best-practices-for-keeping-your-data-and-infra
+
+
+
+Hosted App Uri : https://immense-hamlet-20902.herokuapp.com/products
+
