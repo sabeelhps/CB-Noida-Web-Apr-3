@@ -53,7 +53,7 @@ sendBtn.addEventListener('click', () => {
 
 socket.on('received-msg', (data) => {
     const li = document.createElement('li');
-    li.innerHTML = `${data.username} : ${data.message}`;
+    li.innerText = `${data.username} : ${data.message}`;
     li.setAttribute('class', 'list-group-item mb-2 rounded-pill');
     chatList.append(li);
 })
