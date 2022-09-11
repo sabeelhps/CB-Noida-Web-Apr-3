@@ -1,0 +1,8 @@
+.container{
+    width: 360px;
+    margin: 20px auto;
+}
+
+.container span button{
+    font-size: 24px;
+}
