@@ -4,9 +4,15 @@ import styles from "./MyCart.module.css";
 
 const MyCart = () => {
 
-  const { cart } = useContext(CartContext);
+  const { cart,placeOrder,status,error,data } = useContext(CartContext);
   
   const totalPrice = cart.reduce((total, food) => total + food.qty * food.price, 0);
+
+  if (status === 'pending' && data !==null) {
+    return <p>Placing Your Order.......</p>
+  }
+
+  console.log(data);
 
   return (
      <ul className={styles.cart}>
@@ -24,7 +30,7 @@ const MyCart = () => {
                     </li>
                 })
             }
-            <li>Total: {totalPrice}  <span className={styles['place-order-btn']}><button>Place Order</button></span> </li>
+            <li>Total: {totalPrice}  <span className={styles['place-order-btn']}><button onClick={()=>placeOrder()}>Place Order</button></span> </li>
         </ul>
   )
 }

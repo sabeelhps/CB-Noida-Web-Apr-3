@@ -1,9 +1,15 @@
-import React,{createContext,useState,useEffect} from 'react';
+import React, { createContext, useState, useEffect } from 'react';
+import useHttp from '../hooks/use-http';
+import { placeOrderFromCart } from '../lib/api';
 
 const CartContext = createContext({
     cart: [],
     cartLength: 0,
-    addToCart:()=>{}
+    addToCart: () => { },
+    placeOrder: () => { },
+    status: null,
+    error: null,
+    data:null
 });
 
 export const CartContextProvider = (props) => {
@@ -11,8 +17,7 @@ export const CartContextProvider = (props) => {
     const intialCart = JSON.parse(window.localStorage.getItem("cart") || '[]');
 
     const [cart, setCart] = useState(intialCart);
-
-    console.log(cart);
+    const { status,error,data,sendRequest } = useHttp(placeOrderFromCart);
 
     const addToCart = (item) => {
 
@@ -27,10 +32,19 @@ export const CartContextProvider = (props) => {
         } 
     }    
 
+    const placeOrder = () => {
+        sendRequest(cart);
+        setCart(() => []);
+    }
+
     const context = {
         cart: cart,
         cartLength: cart.length,
-        addToCart:addToCart
+        addToCart: addToCart,
+        placeOrder: placeOrder,
+        status: status,
+        error: error,
+        data:data
     }
 
     useEffect(() => {

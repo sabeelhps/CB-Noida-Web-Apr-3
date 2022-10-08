@@ -9,7 +9,8 @@ mongoose.connect('mongodb://localhost:27017/food-app-noida-apr')
     .catch((err) => console.log(err));
 
 
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors({
   origin:['http://localhost:3001']
 }))
@@ -17,8 +18,7 @@ app.use(cors({
 const foodApi = require('./apis/foodApi');
 
 
-app.use(foodApi);
-
+app.use('/api/v1',foodApi);
 
 
 app.listen(3000,()=>{

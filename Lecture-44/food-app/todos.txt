@@ -1,0 +1,2 @@
+1. Add authentication using JWT
+2. Add increment / decrement food quantity 
